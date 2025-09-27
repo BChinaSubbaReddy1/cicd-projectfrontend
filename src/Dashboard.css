@@ -1,0 +1,68 @@
+/* Make sure the page fills the full screen */
+body, html, #root, .dashboard {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo text */
+.logoText {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logoText span {
+  color: lightsalmon;
+}
+
+/* Right-side user info */
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.fullname {
+  font-size: 18px;
+}
+
+/* Logout icon */
+.logout {
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+
+/* Main dashboard body */
+.dashboardBody {
+  display: flex;
+  height: calc(100% - 70px); /* subtract header height */
+}
+
+/* Menu bar area */
+.menu {
+  width: 200px;
+  background-color: #f7f7f7;
+  border-right: 1px solid #ccc;
+  padding: 20px 10px;
+}
+
+/* Content area */
+.outlet {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #e6f0ff;
+}

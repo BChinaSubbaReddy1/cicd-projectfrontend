@@ -1,0 +1,216 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container layout */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.1);
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  /* Center content in the viewport */
+  position: relative;
+}
+
+/* Left branding section */
+.header-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.header-content h1 {
+  font-size: 48px;
+  color: #2a2a72;
+  margin-bottom: 15px;
+}
+
+.header-content h2 {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Form section */
+.login-box {
+  flex: 1;
+  min-width: 350px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+}
+
+.popup-header {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  margin-top: 6px;
+  border: 2px solid #ccc;  /* Increased border thickness */
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fff;
+  color: #333;  /* Ensuring text is visible */
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+/* Ensure the text is visible on focus */
+input:focus,
+select:focus {
+  border-color: #2a2a72; /* Focus border color */
+  box-shadow: 0 0 8px rgba(42, 42, 114, 0.3);  /* Focus glow */
+}
+
+input::placeholder,
+select::placeholder {
+  color: #aaa;  /* Placeholder text color */
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #2a2a72;
+  color: #fff;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #1e1e56;
+}
+
+/* Forgot password */
+.forgotpassword {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #2a2a72;
+  cursor: pointer;
+}
+
+.forgotpassword span:hover {
+  text-decoration: underline;
+}
+
+/* Error message */
+.error-message {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* Toggle sign-up/sign-in */
+.toggle-signup {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.toggle-signup span {
+  color: #2a2a72;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle-signup span:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+#footer {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.socialmedia {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.copyrighttext {
+  font-size: 13px;
+  color: #888;
+  margin-top: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .header-content,
+  .login-box {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .header-content h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .header-content h2 {
+    text-align: center;
+    font-size: 16px;
+  }
+}
