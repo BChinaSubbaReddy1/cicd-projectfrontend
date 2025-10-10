@@ -1,0 +1,101 @@
+/* Resume Module Design */
+.resume-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.resume-heading {
+  font-size: 36px;
+  color: #2a2a72;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-section {
+  margin-bottom: 30px;
+}
+
+.resume-section h3 {
+  font-size: 24px;
+  color: #2a2a72;
+  margin-bottom: 10px;
+}
+
+.resume-info {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-info li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.resume-info a {
+  color: #2a2a72;
+  text-decoration: none;
+}
+
+.resume-info a:hover {
+  text-decoration: underline;
+}
+
+.experience-item,
+.education-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h4,
+.education-item h4 {
+  font-size: 20px;
+  color: #2a2a72;
+  margin-bottom: 5px;
+}
+
+.experience-item p,
+.education-item p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.experience-item ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.experience-item li,
+.education-item li {
+  font-size: 16px;
+  color: #333;
+}
+
+.experience-item li:before {
+  content: '•';
+  margin-right: 8px;
+  color: #2a2a72;
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 20px;
+  }
+
+  .resume-heading {
+    font-size: 30px;
+  }
+
+  .resume-section h3 {
+    font-size: 22px;
+  }
+
+  .experience-item h4,
+  .education-item h4 {
+    font-size: 18px;
+  }
+}

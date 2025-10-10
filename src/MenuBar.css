@@ -1,0 +1,56 @@
+.menubar {
+  width: 220px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  padding: 0;
+}
+
+.menuheader {
+  padding: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+.menuheader img {
+  width: 24px;
+  height: 24px;
+}
+
+.menulist {
+  padding: 0;
+  margin: 0;
+}
+
+.menubar .menulist ul li {
+    width: 100%;
+    line-height: 34px;
+    margin-top: 20px;           
+    padding: 6px 10px;          
+    background: lightsalmon;
+    display: flex;              
+    align-items: center;        
+    gap: 10px;                  
+    border-radius: 6px;         
+}
+
+
+.menubar .menulist ul li:hover {
+    cursor: pointer;
+    background: #E9EEF3;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
